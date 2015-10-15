@@ -152,3 +152,22 @@ body {
     min-height: 200px;
   }
 }
+
+/*For Meizu*/
+@media only screen and (min-device-width: 1080px) and (max-device-width: 1800px) and (device-aspect-ratio: 9/15) {
+  .page-1 h2.page-title {
+    width: 50%;
+    margin: 40% 25% 0 25%;
+    height: 140px;
+  }
+
+  .red-packet-wrap {
+    width: 60%;
+    margin: 20% 20% 0 20%;
+  }
+
+  #red-packet-button {
+    padding: 0;
+    font-size: 14px;
+  }
+}
