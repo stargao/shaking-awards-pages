@@ -1,0 +1,162 @@
+body, html {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: url(../img/background-img.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.page-2, .page-3 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url(../img/red-packet-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.page-2 div {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+#red-packet-button, #receive-awards-button {
+  display: block;
+  text-align: center;
+  width: 160px;
+  height: 160px;
+  line-height: 160px;
+  margin-left: -80px;
+  margin-top: 70%;
+  left: 50%;
+}
+
+.awards-content {
+  margin-top: 85%;
+  font-size: 16px;
+  color: #333;
+  background: #fff;
+  padding: 5px 10px;
+}
+
+.page-3 .form-group {
+  margin-top: 40%;
+}
+
+.page-3 .form-group label {
+  font-size: 16px;
+  text-shadow: 1px 1px 3px #fff;
+}
+
+#phone-number-button {
+  display: block;
+  width: 100%;
+}
+
+.page-4 h2 {
+  margin-top: 60%;
+  text-shadow: 1px 2px 3px #fff;
+}
+
+.page-4 p {
+  text-shadow: 1px 1px 3px #fff;
+}
+
+/*For iPhone 5 & 5s*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  #red-packet-button {
+    width: 160px;
+    height: 160px;
+    line-height: 160px;
+    margin-left: -80px;
+    margin-top: 70%;
+  }
+
+  #receive-awards-button {
+    width: 140px;
+    height: 140px;
+    line-height: 140px;
+    margin-left: -70px;
+    margin-top: 50%;
+  }
+
+  .awards-content {
+    margin-top: 10%;
+  }
+
+  .page-3 .form-group {
+    margin-top: 60%;
+  }
+
+  .page-4 h2 {
+    margin-top: 70%;
+  }
+}
+
+/*For iPhone 6 & 6s*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) {
+  #red-packet-button {
+    width: 160px;
+    height: 160px;
+    line-height: 160px;
+    margin-left: -80px;
+    margin-top: 70%;
+  }
+
+  #receive-awards-button {
+    width: 180px;
+    height: 180px;
+    line-height: 180px;
+    margin-left: -90px;
+    margin-top: 60%;
+  }
+
+  .awards-content {
+    font-size: 20px;
+    margin-top: 10%;
+  }
+
+  .page-3 .form-group {
+    margin-top: 80%;
+  }
+}
+
+/*For iPhone 4*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+  #red-packet-button {
+    width: 140px;
+    height: 140px;
+    line-height: 140px;
+    margin-left: -70px;
+    margin-top: 60%;
+  }
+
+  #receive-awards-button {
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin-left: -50px;
+    margin-top: 40%;
+  }
+
+  .awards-content {
+    margin-top: 5%;
+  }
+
+  .page-4 h2 {
+    margin-top: 70%;
+  }
+}
+
+/*For Meizu*/
+@media only screen and (min-device-width: 1080px) and (max-device-width: 1800px) and (device-aspect-ratio: 9/15) {
+  
+}
