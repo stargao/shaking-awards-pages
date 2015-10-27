@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width; height=device-height; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>小辣椒千万礼包抽奖活动</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.4.0/animate.min.css" />
+    <link rel="stylesheet" href="http://cdn.bootcss.com/Buttons/2.0.0/css/buttons.min.css" />
+    <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row page-1">
+            <div class="col-xs-12">
+                <div class="red-packet-wrap animated bounceInDown">
+                    <a href="#click-red-packet" class="button button-3d button-action button-pill button-large" id="click-red-packet-btn">试试手气</a>
+                    <div class="awards-content text-center animated shake hidden">
+                        <h1>恭喜你！获得</h1>
+                        <h2>100000 <span>元</span></h2>
+                        <span>该金额将用于购机抵扣</span>
+                        <a href="#click-red-packet" class="button button-3d button-action button-pill button-large" id="be-dealer-btn">成为经销商</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row page-2 animated flipInY hidden">
+            <div class="col-xs-10 col-xs-offset-1 form-wrap">
+                <h2 class="text-center">填写资料</h2>
+                <p>以下各项均为必填</p>
+                <form class="form">
+                    <div class="form-group">
+                        <label for="">经销商名称</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">负责人姓名</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">负责人电话</label>
+                        <input type="tel" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-danger btn-block" id="select-phone-btn">选购机型 <i class="fa fa-chevron-right"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row page-3 animated flipInY hidden">
+            <div class="col-xs-10 col-xs-offset-1 form-wrap">
+                <h2 class="text-center">选择机型</h2>
+                <ul class="media-list select-phone">
+                    <li class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="img/phone-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">红辣椒X1</h4>
+                            <p class="phone-desc">千元智能指纹手机</p>
+                            <p class="phone-price"><i class="fa fa-cny"></i> 799</p>
+                            <div class="input-group">
+                                <input type="number" class="form-control" placeholder="" aria-describedby="">
+                                <span class="input-group-addon" id="">台</span>
+                            </div>
+                            <p class="phone-discount">该机型每部抵扣 <span>20</span> 元</p>
+                        </div>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="img/phone-2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">红辣椒NX Plus</h4>
+                            <p class="phone-desc">千元3+32G存储指纹手机</p>
+                            <p class="phone-price"><i class="fa fa-cny"></i> 1299</p>
+                            <div class="input-group">
+                                <input type="number" class="form-control" placeholder="" aria-describedby="">
+                                <span class="input-group-addon" id="">台</span>
+                            </div>
+                            <p class="phone-discount">该机型每部抵扣 <span>100</span> 元</p>
+                        </div>
+                    </li>
+                    <li class="divider"></li>
+                </ul>
+                <button href="#next-step" class="btn btn-danger btn-block" id="submit-order-btn">提交订单</button>
+            </div>
+        </div>
+        <div class="row page-4 animated slideInDown success-wrap hidden">
+            <div class="col-xs-10 col-xs-offset-1 form-wrap">
+                <h2 class="text-center text-danger success-trip"><i class="fa fa-check-circle-o"></i></h2>
+                <h4 class="text-center">提交成功</h4>
+                <p>客服人员将稍后与您取得联系</p>
+            </div>
+        </div>
+    </div>
+<script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="http://cdn.bootcss.com/Buttons/2.0.0/js/buttons.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
