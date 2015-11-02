@@ -1,0 +1,11 @@
+.container-fluid {
+	padding: 0;
+}
+
+.thumbnail {
+	background: url(../img/placeholder.jpg) center no-repeat;
+	background-size: cover;
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
