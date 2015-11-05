@@ -1,0 +1,353 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.section {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.section-1 {
+    background-image: url(../img/section-1.jpg);
+    background-color: #000;
+    background-size: cover;
+    background-position: top center;
+}
+
+.section-1 img.page-title {
+    display: block;
+    width: 24rem;
+    height: auto;
+    margin: 0 auto;
+}
+
+.section-1 h2.page-sub-title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    margin: 1rem 0 10rem;
+}
+
+.section-1 img.phone-1 {
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: 24rem auto 1rem;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 1.2s;
+}
+
+.section-2 {
+    /*background-image: url(../img/xm_2.jpg);*/
+    background-color: #f9f9f9;
+}
+
+.section-2 h2 {
+    font-size: 2.4rem;
+    font-weight: 300;
+    text-align: center;
+    color: #333;
+}
+
+.section-2 p {
+    padding: 0 10%;
+    font-size: 1.4rem; 
+    font-weight: 200;
+    color: #666;
+    margin-bottom: 10rem;
+}
+
+.section-2 img.phone-2 {
+    width: 64rem;
+    height: auto;
+    margin-left: 10%;
+}
+
+.section-3 {
+    background-image: url(../img/section-1.jpg);
+    background-color: #000;
+    background-size: cover;
+    background-position: top center;
+}
+
+.section-3 h2 {
+    font-size: 2.4rem;
+    font-weight: 300;
+    text-align: left;
+    line-height: 2.6rem;
+    color: #fff;
+    margin-left: 10%;
+    border: 0;
+}
+
+.section-3 p {
+    width: 60%;
+    padding: 0 10%;
+    font-size: 1.4rem; 
+    font-weight: 200;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.section-3 img.phone-3 {
+    width: 40rem;
+    height: auto;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 0.5s;
+}
+
+.section-4 {
+    background-image: url(../img/section-4.jpg);
+    background-color: #fff;
+    background-size: 100% auto;
+    background-position: bottom center;
+}
+
+.section-4 h2 {
+    font-size: 2.4rem;
+    font-weight: 200;
+    text-align: center;
+    line-height: 2.8rem;
+    color: #333;
+    margin: 2rem 0;
+}
+
+.section-4 div.camera {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-4 div.camera div.camera-attr {
+    display: inline-block;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.section-4 div.camera div.camera-attr:first-child {
+    border-right: 1px solid #ccc;
+}
+
+.section-4 div.camera div.camera-attr h3 {
+    font-size: 3.6rem;
+    color: #333;
+    font-weight: 200;
+    margin: 0;
+}
+
+.section-4 div.camera div.camera-attr h3 span {
+    font-size: 1.6rem;
+}
+
+.section-4 div.camera div.camera-attr p {
+    width: 100%;
+    margin: 0;
+}
+
+.section-4 p.camera-desc {
+    float: right;
+    width: 50%;
+    padding: 0 10%;
+    font-size: 1.4rem;
+    color: #333;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+.section-5 {
+    /*background-image: url(../img/section-5.jpg);
+    background-position: top center;
+    background-size: auto 10rem;*/
+    background-color: #333; 
+}
+
+.section-5 h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 2.8rem;
+    color: #fff;
+    margin: 0.5rem 0;
+}
+
+.section-5 h2 span {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 200;
+    text-align: center;
+    color: #fff;
+}
+
+.section-5 p {
+    padding: 0 10%;
+    font-size: 1.4rem; 
+    font-weight: 200;
+    color: #fff;
+}
+
+.section-5 .performance-wrap {
+    padding: 0 10%;
+}
+
+.section-5 .performance-wrap h3 {
+    font-size: 2rem;
+    font-weight: 100;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.section-5 .performance-wrap p {
+    float: left;
+    font-size: 1.6rem;
+    color: #ccc;
+    line-height: 3.2rem;
+    margin: 0.6rem 0;
+    padding: 0;
+}
+
+.section-5 .performance-wrap div.performance-line {
+    float: left;
+    height: 3.2rem;
+    margin: 0.6rem;
+}
+
+.section-5 .performance-wrap div.line-64 {
+    width: 0;
+    background-color: red;
+    font-size: 1.4rem;
+    line-height: 3.2rem;
+    color: #fff;
+    text-align: right;
+    transition: width 2s;
+    -webkit-transition: width 2s;
+}
+
+.section-5 .performance-wrap div.line-64.animate {
+    width: 60%;
+}
+
+.section-5 .performance-wrap div.line-32 {
+    width: 0rem;
+    background-color: #ccc;
+    transition: width 1s;
+    -webkit-transition: width 1s;
+}
+
+.section-5 .performance-wrap div.line-32.animate {
+    width: 30%;
+}
+
+.section-5 .performance-wrap div.line-64-2 {
+    width: 0;
+    background-color: red;
+    font-size: 1.4rem;
+    line-height: 3.2rem;
+    color: #fff;
+    text-align: right;
+    transition: width 2s;
+    -webkit-transition: width 2s;
+}
+
+.section-5 .performance-wrap div.line-64-2.animate {
+    width: 50%;
+}
+
+.section-5 .performance-wrap div.line-32-2 {
+    width: 0rem;
+    background-color: #ccc;
+    transition: width 1s;
+    -webkit-transition: width 1s;
+}
+
+.section-5 .performance-wrap div.line-32-2.animate {
+    width: 40%;
+}
+
+.section-6 {
+    background-image: url(../img/section-6.jpg);
+    background-color: #fff;
+}
+
+.section-6 .phone-network-desc {
+    width: 90%;
+    margin: 30rem 5% 0;
+    -webkit-animation-duration: 1.5s;
+}
+
+.section-6 .phone-network-desc h2 {
+    font-size: 2.4rem;
+    font-weight: 200;
+    text-align: center;
+    line-height: 2.8rem;
+    color: #000;
+    margin-bottom: 2rem;
+}
+
+.section-6 .phone-network-desc p {
+    font-size: 1.4rem;
+    color: #000;
+    text-align: center;
+}
+
+.section-7 {
+    background-image: url(../img/section-7.jpg);
+    background-color: #fff;
+    background-position: top center;
+    background-size: auto 100%;
+}
+
+.section-8 {
+    background-image: url(../img/xm_8.jpg);
+    background-color: #fff;
+    background-position: top center;
+    background-size: auto 100%;
+}
+
+.section-9 {
+    background-color: #f9f9f9;
+}
+
+.section-9 img.la-logo {
+    display: block;
+    width: 40%;
+    height: auto;
+    margin: 5rem auto;
+}
+
+.section-9 h2 {
+    font-size: 2.4rem;
+    font-weight: 200;
+    text-align: center;
+    line-height: 2.8rem;
+    color: #333;
+}
+
+.section-9 h3 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 2.8rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.section-9 p {
+    margin: 0 10%;
+    font-size: 1.6rem;
+    color: #666;
+    text-align: center;
+}

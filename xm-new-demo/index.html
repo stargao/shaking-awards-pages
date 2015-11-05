@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+    <title>小辣椒XM</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.4.0/animate.min.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/fullPage.js/2.7.4/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <div id="fullpage">
+        <div class="section section-1" data-menuanchor="section-1">
+            <img src="img/page-title.png" class="page-title animated slideInDown" alt="">
+            <h2 class="page-sub-title animated slideInDown">支持任性 辣么国民</h2>
+            <img src="img/phone-1.png" class="phone-1 animated fadeInUp" alt="">
+        </div>
+        <div class="section section-2" data-menuanchor="section-2">
+            <h2>时尚后盖，精彩生活</h2>
+            <p>采用一体成型的后盖设计，使用高档材质，更加坚固、贴合。多样性的设计使得手机更加时尚个性。</p>
+            <img src="img/phone-2.png" class="phone-2 hidden" alt="">
+        </div>
+        <div class="section section-3" data-menuanchor="section-3">
+            <h2>5.0 高清视网膜屏<br/>IPS 技术 178&ordm; 广角</h2>
+            <p>无界设计，无视束缚。在高清视网膜下营造强烈视觉冲击。极致简约，彰显干练作风！电影、游戏视觉效果更加震撼！</p>
+            <img src="img/phone-3.png" class="phone-3 hidden" alt="">
+        </div>
+        <div class="section section-4" data-menuanchor="section-4">
+            <h2>实时动态美颜</h2>
+            <div class="camera hidden">
+                <div class="camera-attr">
+                    <h3>200<span>万</span></h3>
+                    <p>前置摄像头</p>
+                </div>
+                <div class="camera-attr">
+                    <h3>800<span>万</span></h3>
+                    <p>后置摄像头</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <p class="camera-desc hidden">800W + 200W 的OV摄像头，运用专业的智能算法，实时处理照片，按下快门，所得即是最美的效果，省去修图的烦恼，直接分享朋友圈。拍摄照片及视频时，系统会自行优化，还有各种好玩儿的功能为你美化图片，让你轻松爱上拍照，记录下生活的每一刻美好瞬间。</p>
+        </div>
+        <div class="section section-5" data-menuanchor="section-5">
+            <h2>64位 处理器CPU<span>这不止是一点点的进步</span></h2>
+            <p>搭载了最新64位CPU构架，相比传统的32位构架的CPU性能提升了50%。</p>
+            <div class="performance-wrap">
+                <h3>CPU性能</h3>
+                <hr/>
+                <p>64位</p><div class="performance-line line-64">提升50%</div>
+                <div class="clearfix"></div>
+                <p>32位</p><div class="performance-line line-32"></div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="performance-wrap">
+                <h3>流畅度</h3>
+                <hr/>
+                <p>64位</p><div class="performance-line line-64-2">提升20%</div>
+                <div class="clearfix"></div>
+                <p>32位</p><div class="performance-line line-32-2"></div>
+            </div>
+        </div>
+        <div class="section section-6" data-menuanchor="section-6">
+            <div class="phone-network-desc hidden">
+                <h2>电信4G 双卡双待</h2>
+                <p>采用双卡双待设计，支持电信4G网络，最高下载速度可达100Mbps，一部手机，多种网络，让娱乐、工作两不误</p>
+            </div>
+        </div>
+        <div class="section section-7" data-menuanchor="section-7"></div>
+        <div class="section section-8" data-menuanchor="section-8"></div>
+        <div class="section section-9" data-menuanchor="section-9">
+            <h2>欢迎莅临小辣椒展位</h2>
+            <img src="img/la-logo.png" alt="" class="la-logo">
+            <h3>XXX 号</h3>
+            <p>整点将会开放现场手机微信摇红包活动，敬请参与！</p>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="http://cdn.bootcss.com/fullPage.js/2.7.4/jquery.fullPage.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            anchors: ['section-1', 'section-2', 'section-3', 'section-4', 'section-5', 'section-6', 'section-7', 'section-8', 'section-9'],
+            afterLoad: function(anchorLink, index){
+                var loadedSection = $(this);
+
+                //using anchorLink
+                if(anchorLink == 'section-2'){
+                    $('.phone-2').removeClass('hidden');
+                    $('.phone-2').addClass('animated fadeInRight slideInRight');
+                } else if(anchorLink == 'section-3') {
+                    $('.phone-3').removeClass('hidden');
+                    $('.phone-3').addClass('animated fadeIn');
+                } else if(anchorLink == 'section-4') {
+                    $('.camera').removeClass('hidden');
+                    $('.camera-desc').removeClass('hidden');
+                    $('.camera').addClass('animated fadeIn');
+                    $('.camera-desc').addClass('animated slideInRight');
+                } else if(anchorLink == 'section-5') {
+                    $('.performance-line').addClass('animate');
+                } else if(anchorLink == 'section-6') {
+                    $('.phone-network-desc').removeClass('hidden');
+                    $('.phone-network-desc').addClass('animated slideInUp');
+                }
+            }
+        });
+    });
+</script>
+</html>
