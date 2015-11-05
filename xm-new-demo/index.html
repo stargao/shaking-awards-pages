@@ -15,6 +15,7 @@
     <div class="mask-layer">
         <img src="img/la-logo.png" alt="" class="la-logo">
         <img src="img/preloader.gif" class="loading-img" alt="">
+        <p>载入中，请稍候...</p>
     </div>
     <div id="fullpage">
         <div class="section section-1" data-menuanchor="section-1">
@@ -86,8 +87,11 @@
 <script type="text/javascript" src="http://cdn.bootcss.com/fullPage.js/2.7.4/jquery.fullPage.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
-        $('.mask-layer').fadeOut();
+        setTimeout(function(){
+            $('.mask-layer').fadeOut();
+        }, 2000);
         
+
         $('#fullpage').fullpage({
             anchors: ['section-1', 'section-2', 'section-3', 'section-4', 'section-5', 'section-6', 'section-7', 'section-8', 'section-9'],
             afterLoad: function(anchorLink, index){

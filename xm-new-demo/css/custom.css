@@ -364,14 +364,21 @@ body, html {
 
 .mask-layer .la-logo {
     display: block;
-    width: 200px;
-    height: 200px;
-    margin: 20rem auto 5rem;
+    width: 50%;
+    height: auto;
+    margin: 10rem auto 5rem;
 }
 
 .mask-layer .loading-img {
     display: block;
-    width: 230px;
-    height: 200px;
+    width: 40%;
+    height: auto;
     margin: 0 auto;
+}
+
+.mask-layer p {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 200;
+    color: #666;
 }
