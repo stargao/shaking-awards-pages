@@ -19,9 +19,9 @@
     </div>
     <div id="fullpage">
         <div class="section section-1" data-menuanchor="section-1">
-            <img src="img/page-title.png" class="page-title animated slideInDown" alt="">
-            <h2 class="page-sub-title animated slideInDown">支持任性 辣么国民</h2>
-            <img src="img/phone-1.png" class="phone-1 animated fadeInUp" alt="">
+            <img src="img/page-title.png" class="page-title hidden" alt="">
+            <h2 class="page-sub-title hidden">支持任性 辣么国民</h2>
+            <img src="img/phone-1.png" class="phone-1 hidden" alt="">
         </div>
         <div class="section section-2" data-menuanchor="section-2">
             <h2>时尚后盖，精彩生活</h2>
@@ -98,7 +98,14 @@
                 var loadedSection = $(this);
 
                 //using anchorLink
-                if(anchorLink == 'section-2'){
+                if(index == 1){
+                    setTimeout(function(){
+                        $('.section-1 *').removeClass('hidden');
+                        $('.section-1 img.page-title').addClass('animated fadeInDown');
+                        $('h2.page-sub-title').addClass('animated fadeInDown');
+                        $('.section-1 img.phone-1').addClass('animated fadeInUp');
+                    }, 2000);
+                } else if(anchorLink == 'section-2'){
                     $('.phone-2').removeClass('hidden');
                     $('.phone-2').addClass('animated fadeInRight slideInRight');
                 } else if(anchorLink == 'section-3') {

@@ -33,6 +33,7 @@ body, html {
     width: 24rem;
     height: auto;
     margin: 0 auto;
+    -webkit-animation-delay: 1s;
 }
 
 .section-1 h2.page-sub-title {
@@ -41,6 +42,7 @@ body, html {
     text-align: center;
     color: #fff;
     margin: 1rem 0 10rem;
+    -webkit-animation-delay: 1s;
 }
 
 .section-1 img.phone-1 {
