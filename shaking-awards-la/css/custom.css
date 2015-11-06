@@ -7,7 +7,7 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
-    background: url(../img/page-bg.jpg) top center no-repeat;
+    background: url(../img/page-bg.jpg) top center no-repeat #F9EEC2;
     background-size: cover;
     font-size: 62.5%;
 }
@@ -104,9 +104,18 @@ body {
     width: 100px;
 }
 
+.select-phone .input-group {
+    margin-bottom: 10px;
+}
+
 .select-phone p {
+    font-size: 1.4rem;
     text-align: left;
     margin-bottom: 5px;
+}
+
+.select-phone img.black-color, .select-phone img.grey-color {
+    display: none;
 }
 
 .select-phone p.phone-price {
@@ -115,9 +124,38 @@ body {
     color: red;
 }
 
+.select-phone a.color-btn {
+    width: 45%;
+    display: inline-block;
+    font-size: 1.6rem;
+    padding: 0.5rem 0;
+    border: 2px solid #ccc;
+    text-align: center;
+    color: #666;
+    text-decoration: none;
+}
+
+.select-phone a.color-btn.first-item {
+    margin-right: 5%;
+}
+
+.select-phone a.color-btn.select-item {
+    border: 2px solid red;
+    color: red;
+}
+
 .select-phone p.phone-discount span {
     font-weight: bold;
     color: red;
+}
+
+.select-phone p.order-content {
+    font-weight: 300;
+}
+
+.select-phone p.order-content span {
+    font-weight: 600;
+    padding: 0 0.5rem;
 }
 
 .success-wrap {
@@ -126,4 +164,9 @@ body {
 
 h2.success-trip {
     font-size: 4.8rem;
+}
+
+.success-wrap p.lead {
+    margin-top: 2rem;
+    font-size: 1.8rem;
 }

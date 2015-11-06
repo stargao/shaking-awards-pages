@@ -18,4 +18,13 @@ $(function(){
         $('.page-3').hide();
         $('.page-4').removeClass('hidden');
     })
+
+    $('.select-phone a.color-btn').click(function(){
+        var colorSet = $(this).attr('data-color');
+        $(this).closest('.input-group').find('a').removeClass('select-item');
+        $(this).addClass('select-item');
+        $(this).closest('.media').find('img').hide();
+        var phoneSet = '.'+ colorSet;
+        $(phoneSet).show();
+    })
 })
