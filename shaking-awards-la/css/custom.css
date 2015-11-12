@@ -170,3 +170,27 @@ h2.success-trip {
     margin-top: 2rem;
     font-size: 1.8rem;
 }
+
+/*For iPhone 4*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+    body {
+        background: url(../img/page-bg.jpg) center -40px no-repeat #F9EEC2;
+        background-size: cover;
+    }
+
+    .red-packet-wrap {
+        height: 75%;
+    }
+
+    #click-red-packet-btn {
+        margin: 60% 20% 0;
+    }
+
+    .awards-content {
+        padding-top: 35%;
+    }
+
+    #be-dealer-btn {
+        margin: 5% 20% 0;
+    }
+}
