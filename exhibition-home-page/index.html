@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
+    <div class="mask-layer">
+        <img src="img/logo.png" alt="小辣椒" class="logo-img">
+        <img src="img/loading.gif" alt="" class="loading-img">
+        <p>加载中...</p>
+    </div>
     <div class="container-fluid page-content">
         <h1 class="text-center">感 · 情 四川<br/><small>2015年终端产业链年会<br/>暨春促终端订货会</small></h1>
         <div class="row phone-showcase">
@@ -48,6 +53,8 @@
 <script type="text/javascript" src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script type="text/javascript">
     $(function(){
+        $('.mask-layer').fadeOut();
+
         var phoneAnimated = function(){
             $('.phone-image').removeClass('image-hide');
             $('.phone-image').addClass('animated bounceIn');
