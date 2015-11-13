@@ -1,0 +1,111 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+    background-color: transparent;
+}
+
+h1, h2, h3, p {
+    color: #fff;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: gold;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h1 small {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    margin-top: 0.2rem;
+    display: block;
+    color: #f2f2f2!important;
+}
+
+a, p {
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: #fff!important;
+}
+
+p.lead {
+    font-size: 1.8rem;
+}
+
+p.lead span {
+    font-size: 2.4rem;
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+    color: gold;
+    text-shadow: 1px 1px 3px #000;
+}
+
+p span {
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+html {
+    background: url(../img/background.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+.image-hide {
+    visibility: hidden;
+}
+
+.page-content {
+    
+}
+
+.phone-showcase {
+    margin-bottom: 20px;
+}
+
+.phone-showcase a {
+    text-align: center;
+    color: #fff;
+}
+
+.phone-showcase a:hover {
+    text-decoration: none;
+}
+
+.phone-showcase a h2 {
+    font-size: 1.6rem;
+    font-weight: 200;
+}
+
+.phone-showcase a img {
+    display: block;
+    margin: 0 auto;
+}
+
+.phone-showcase a img.la-4s {
+    width: 80%;
+    height: auto;
+}
+
+.phone-showcase a img.la-xm {
+    width: 80%;
+    height: auto;
+}
+
+p.company-desc {
+    font-size: 1.2rem;
+    color: #f2f2f2;
+}
+
+p.company-desc a {
+    text-decoration: underline;
+    padding: 0 3px;
+}
