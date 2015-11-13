@@ -61,6 +61,10 @@ html, .page-content {
     background-size: cover;
 }
 
+strong {
+    color: gold;
+}
+
 .image-hide {
     visibility: hidden;
 }
