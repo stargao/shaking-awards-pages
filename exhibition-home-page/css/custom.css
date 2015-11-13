@@ -56,7 +56,7 @@ p span {
     padding: 0 5px;
 }
 
-html {
+html, .page-content {
     background: url(../img/background.jpg) no-repeat fixed;
     background-size: cover;
 }
