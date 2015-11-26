@@ -12,10 +12,12 @@
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
-    <div class="mask-layer">
+    <div class="mask-layer countdown">
         <img src="img/la-logo.png" alt="" class="la-logo">
-        <img src="img/preloader.gif" class="loading-img" alt="">
-        <p>载入中，请稍候...</p>
+        <!--img src="img/preloader.gif" class="loading-img" alt="">
+        <p>载入中，请稍候...</p-->
+        <h1>离发布会开始还有:</h1>
+        <h2 id="clock"></h2>
     </div>
     <div id="fullpage">
         <div class="section section-1" data-menuanchor="section-1">
@@ -35,6 +37,13 @@
         </div>
         <div class="section section-4" data-menuanchor="section-4">
             <h2>实时动态美颜</h2>
+            <div class="camera-group">
+                <img src="img/camera.png" alt="" class="camera-img camera-1 hidden">
+                <img src="img/camera.png" alt="" class="camera-img camera-2 hidden">
+                <img src="img/camera.png" alt="" class="camera-img camera-3 hidden">
+                <img src="img/camera.png" alt="" class="camera-img camera-4 hidden">
+                <img src="img/camera.png" alt="" class="camera-img camera-5 hidden">
+            </div>
             <div class="camera hidden">
                 <div class="camera-attr">
                     <h3>200<span>万</span></h3>
@@ -86,11 +95,27 @@
 </body>
 <script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
 <script type="text/javascript" src="http://cdn.bootcss.com/fullPage.js/2.7.4/jquery.fullPage.js"></script>
+<script type="text/javascript" src="http://cdn.bootcss.com/jquery.countdown/2.1.0/jquery.countdown.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
-        setTimeout(function(){
+         $('#clock').countdown('2015/11/23 16:23:00')
+        .on('update.countdown', function(event) {
+            //console.info(event.offset.minutes)
+            var format = '%H 小时 %M 分 %S 秒';
+            if(event.offset.minutes > 0) {
+
+            } else {
+                format = '%S 秒';
+            }
+            $(this).html(event.strftime(format));
+        })
+        .on('finish.countdown', function(event) {
             $('.mask-layer').fadeOut();
-        }, 2000);
+        });
+
+        /*setTimeout(function(){
+            $('.mask-layer').fadeOut();
+        }, 2000);*/
         
 
         $('#fullpage').fullpage({
@@ -115,8 +140,14 @@
                 } else if(anchorLink == 'section-4') {
                     $('.camera').removeClass('hidden');
                     $('.camera-desc').removeClass('hidden');
+                    $('.camera-img').removeClass('hidden');
                     $('.camera').addClass('animated fadeIn');
                     $('.camera-desc').addClass('animated slideInRight');
+                    $('.camera-5').addClass('animated fadeIn');
+                    $('.camera-4').addClass('animated fadeInUp');
+                    $('.camera-3').addClass('animated fadeInUp');
+                    $('.camera-2').addClass('animated fadeInUp');
+                    $('.camera-1').addClass('animated fadeInUp');
                 } else if(anchorLink == 'section-5') {
                     $('.performance-line').addClass('animate');
                 } else if(anchorLink == 'section-6') {

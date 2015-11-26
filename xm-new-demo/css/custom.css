@@ -75,9 +75,10 @@ body, html {
 }
 
 .section-2 img.phone-2 {
+    display: block;
     width: 64rem;
     height: auto;
-    margin-left: 10%;
+    margin: 0 auto;
 }
 
 .section-3 {
@@ -107,8 +108,10 @@ body, html {
 }
 
 .section-3 img.phone-3 {
+    display: block;
     width: 40rem;
     height: auto;
+    margin: 0 auto;
     -webkit-animation-duration: 3s;
     -webkit-animation-delay: 0.5s;
 }
@@ -117,7 +120,47 @@ body, html {
     background-image: url(../img/section-4.jpg);
     background-color: #fff;
     background-size: 100% auto;
-    background-position: bottom center;
+    background-position: bottom left;
+}
+
+.section-4 .camera-group {
+    position: absolute;
+    width: 50%;
+    bottom: 15%;
+    left: -6%;
+    text-align: center;
+}
+
+.section-4 .camera-group .camera-img {
+    display: block;
+    text-align: center;
+    padding-bottom: 1.2rem;
+    margin: 0 auto;
+}
+
+.section-4 .camera-group img.camera-1 {
+    width: 50%;
+    -webkit-animation-delay: 1.7s;
+}
+
+.section-4 .camera-group img.camera-2 {
+    width: 45%;
+    -webkit-animation-delay: 1.4s;
+}
+
+.section-4 .camera-group img.camera-3 {
+    width: 40%;
+    -webkit-animation-delay: 1.1s;
+}
+
+.section-4 .camera-group img.camera-4 {
+    width: 35%;
+    -webkit-animation-delay: 0.8s;
+}
+
+.section-4 .camera-group img.camera-5 {
+    width: 30%;
+    -webkit-animation-delay: 0.5s;
 }
 
 .section-4 h2 {
@@ -371,11 +414,28 @@ body, html {
     background: #fff;
 }
 
+.mask-layer h1 {
+    display: block;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #999;
+    margin: 5rem 0 0;
+}
+
+.mask-layer h2#clock {
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+    margin: 1rem 0;
+    text-shadow: 0px 2px 3px #ccc;
+}
+
 .mask-layer .la-logo {
     display: block;
     width: 50%;
     height: auto;
-    margin: 10rem auto 5rem;
+    margin: 10rem auto 2rem;
 }
 
 .mask-layer .loading-img {
